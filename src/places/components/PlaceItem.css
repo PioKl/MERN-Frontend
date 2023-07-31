@@ -48,6 +48,11 @@
   margin: 0.5rem;
 }
 
+.place-item__modal-actions button,
+.place-item__modal-actions a {
+  margin: 0.5rem;
+}
+
 .map-container {
   height: 15rem;
   width: 100%;
@@ -56,5 +61,9 @@
 @media (min-width: 768px) {
   .place-item__image {
     height: 20rem;
+  }
+
+  .place-item__modal-actions {
+    padding: 0.5rem;
   }
 }
