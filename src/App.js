@@ -8,6 +8,7 @@ import {
 
 import Users from "./user/pages/Users";
 import NewPlace from "./places/pages/NewPlace";
+import UserPlaces from "./places/pages/UserPlaces";
 import MainNavigation from "./shared/components/Navigation/MainNavigation";
 
 const App = () => {
@@ -19,6 +20,9 @@ const App = () => {
           {/* switch spowoduje, że zanim odpali się redirect, to sprawdzi, czy dana ścieżka, którą wpisuję jest zawarta w gdzieś w Switchu*/}
           <Route path="/" exact={true}>
             <Users />
+          </Route>
+          <Route path="/:userId/places" exact>
+            <UserPlaces />
           </Route>
           <Route path="/places/new" exact={true}>
             <NewPlace />
