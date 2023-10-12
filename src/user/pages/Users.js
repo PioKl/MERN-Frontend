@@ -15,7 +15,7 @@ const Users = () => {
       try {
         //domyślnie w http-hook jest GET więc nie trzeba go tu dodawać
         const responseData = await sendRequest(
-          "http://localhost:5000/api/users"
+          process.env.REACT_APP_BACKEND_URL + "/users"
         );
 
         setLoadedUsers(responseData.users);
