@@ -1,4 +1,11 @@
 {
+  "version": 2,
+  "builds": [
+    {
+      "serc": "*.js",
+      "use": "@vercel/node"
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
